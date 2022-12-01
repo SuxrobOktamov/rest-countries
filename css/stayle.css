@@ -94,7 +94,7 @@ header {
     position: relative;
 }
 .main-search::before {
-    content: url(file:///D:/Git-hub%20files/rest-countries/images/search.svg);
+    content: url(https://kun.uz/assets/4da8d774/img/new-search-icon.svg);
     position: absolute;
     left: 50px;
     top: 19px;
