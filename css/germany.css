@@ -102,7 +102,7 @@ header {
 
 }
 .the-flag-div1::before {
-    content: url(http://127.0.0.1:5500/images/call-made.svg);
+    content: url(file:///D:/Git-hub%20files/rest-countries/images/call-made.svg);
     position: absolute;
     left: 32px;
 }

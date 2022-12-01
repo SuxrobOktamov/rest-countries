@@ -94,7 +94,7 @@ header {
     position: relative;
 }
 .main-search::before {
-    content: url(http://127.0.0.1:5500/images/search.svg);
+    content: url(file:///D:/Git-hub%20files/rest-countries/images/search.svg);
     position: absolute;
     left: 50px;
     top: 19px;
