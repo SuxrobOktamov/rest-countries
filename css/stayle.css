@@ -13,7 +13,18 @@ html {
   height: 100%;
   scroll-behavior: smooth;
 }
-
+:root {
+  --bg-color: #FFFFFF;
+  --primar-color: #2B3844;
+  --main-bg: #F2F2F2;
+  --main-page: #848484;
+}
+.dark {
+  --bg-color: #2B3844;
+  --primar-color: #fff;
+  --main-bg: #252f38;
+  --main-page: #FFFFFF;
+}
 *,
 *::before,
 *::after {
@@ -25,7 +36,7 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  background-color: #fff;
+  background-color: var(--bg-color);
   overflow-x: hidden;
 }
 
@@ -60,7 +71,7 @@ a {
 
 header {
     width: 100%;
-    background: #FFFFFF;
+    background: var(--bg-color);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
     position: fixed;
     z-index: 100;
@@ -73,19 +84,31 @@ header {
     font-weight: 800;
     font-size: 24px;
     line-height: 33px;
-    color: #111517;
+    color: var(--primar-color);
 
 }
 .header-logo {
-    grid-column-gap: 8px;
+  grid-column-gap: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-right: 1rem;
 }
-.header-logo a {
-  color: inherit;
+
+.header-logo p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--primar-color);
+}
+.header-logo i {
+  color: var(--primar-color);
 }
 /* Main */
 #main {
     padding: 128px 0 45px 0;
-    background: #F2F2F2;
+    background: var(--main-bg);
 }
 .main-row {
     grid-row-gap: 48px;
@@ -101,7 +124,7 @@ header {
 }
 .main-search input {
     border: none;
-    background: #FFFFFF;
+    background: var(--bg-color);
     box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
     border-radius: 5px;
     padding: 18px 0 18px 74px;
@@ -109,23 +132,23 @@ header {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #848484;
+    color: var(--main-page);
 
 
 }
 .main-search select {
   border: none;
-  background: #FFFFFF;
+  background: var(--bg-color);
   box-shadow: 0px 2px 9px rgb(0 0 0 / 5%);
   border-radius: 5px;
   font-style: normal;
   font-weight: 400;
   padding: 18px 0px 18px 24px;
   line-height: 20px;
-  color: #848484;
+  color: var(--main-page);
 }
 .flag {
-    background: #FFFFFF;
+    background: var(--bg-color);
     box-shadow: 0px 0px 7px 2px rgb(0 0 0 / 3%);
     border-radius: 5px;
     overflow: hidden;
@@ -141,7 +164,7 @@ header {
     font-weight: 800;
     font-size: 18px;
     line-height: 26px;
-    color: #111517;
+    color: var(--primar-color);
     margin-bottom: 16px;
 }
 .flag p {
@@ -149,7 +172,7 @@ header {
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
-    color: #111517;
+    color: var(--primar-color);
     margin-bottom: 8px;
 }
 
@@ -174,7 +197,7 @@ header {
     font-weight: 800;
     font-size: 14px;
     line-height: 20px;
-    color: #111517;
+    color: var(--primar-color);
   }
   .header-logo p {
     font-family: 'Nunito Sans';
@@ -182,7 +205,7 @@ header {
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
-    color: #111517;
+    color: var(--primar-color);
   }
   .country-flag {
     grid-row-gap: 40px;
